@@ -1,0 +1,398 @@
+
+/* Global Styles  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courgette", cursive;
+}
+
+::placeholder {
+  color:white;
+  opacity: 1; /* Firefox */
+}
+.inputSearch{
+  position: relative;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  width: 600px;
+  left: -200px;
+  height: 50px;
+  border:solid 1px #ccc;
+  border-radius: 10px;
+  border-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.iconSearch{
+  position: relative;
+  left: -230px;
+  size: 9px;
+  
+}
+
+button {
+  padding: 9px 22px;
+  border: none;
+  outline: none;
+  background: #f9f9f9;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Hero Styles  */
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 1) 100%
+  );
+  display: flex;
+  position: relative;
+}
+
+/* Nav Styles */
+
+ nav {
+  display: none;
+} 
+
+/* Card Styles */
+
+
+.cardContainer {
+  width: 250%;
+  max-width: 1100px;
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+  height: calc(50% - 10px);
+}
+
+.card {
+  display: inline-block;
+  
+  width: 200%;
+  max-width: 340px;
+  margin: 16px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 1px 2px 14px 1px #161616;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.cardBg {
+  width: 100%;
+  height: 300px;
+  display: flex;
+
+}
+.text 
+{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace
+  
+}
+.cardBg img {
+  margin: auto;
+  width: 260px;
+  transition: transform 900ms;
+}
+
+.cardBg img:hover {
+  transform: scale(1.2);
+}
+
+.cardInfo {
+  background: #e96a6e;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardInfo p {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+/* Shopping Cart */
+
+.shoppingCartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shoppingCart {
+  min-width: 200px;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: auto;
+  background: linear-gradient(
+    135deg,
+    #e96a6e 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  border-radius: 100px 0 0 0;
+  box-shadow: 1px 2px 30px 1px #130506;
+}
+
+.shoppingCart::-webkit-scrollbar {
+  width: 14px;
+}
+
+
+.shoppingCart .cardRow {
+  width: calc(70% - 14px);
+  margin: 0 0 12px 6px;
+  box-shadow: 1px 2px 30px 1px #130506;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.shoppingCart .cardRow .cardImg {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  position: relative;
+}
+
+.shoppingCart .cardRow .cardImg p {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.shoppingCart .cardRow .cardImg img {
+  margin: auto;
+  width: 160px;
+  display: block;
+  transition: transform 900ms;
+}
+
+.shoppingCart .cardRow .cardImg img:hover {
+  transform: scale(1.2);
+}
+
+.shoppingCart .cardRow .cardPrice {
+  background: #e96a6e;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shoppingCart .cardRow .cardPrice p {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.shoppingCart .cardRow .cardPrice i {
+  color: #f9f9f9;
+  cursor: pointer;
+}
+
+.shoppingCartPrice {
+  width: 440px;
+  height: 100px;
+  background: #fff;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 2px 14px 1px #130506;
+}
+
+.shoppingCartPrice h2 {
+  margin: 12px 0 0 0;
+  color: #e96a6e;
+}
+
+.shoppingCartPrice .allCartItems {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.shoppingCartPrice .allCartItems .itemsAmountWrap {
+  width: 40px;
+  height: 28px;
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.shoppingCartPrice .allCartItems .itemsAmountWrap p {
+  margin: auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.paypelApp {
+  text-align: center;
+  background-color: #d89698;
+  min-height: 100vh;
+  color: white;
+}
+
+.main{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paypelApp i{
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  
+}
+.paypelApp hr{
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  color: white;
+  background-color: white;
+  border: width 1;
+}
+.paypelApp .title{
+  margin-left: 60px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.paypelApp h2{
+ margin-top: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 784px) {
+  .cardContainer {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  } */
+   .card {
+    max-width: 600px;
+  }
+}
+@media (min-width: 785px) and (max-width: 1176px) {
+  .card {
+    max-width: 47.6%;
+  }
+}
+
+@media (max-width: 1645px) {
+  .container {
+    max-width: 94%;
+  }
+  .hero {
+    padding: 90px 0 24px 0;
+    background: linear-gradient(
+      90deg,
+      rgb(255, 255, 255) 70%,
+      #e96a6e 30%
+    );
+  }
+  nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    background: #e96a6e;
+  }
+  nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .container h2 {
+    color: #fff;
+    letter-spacing: 1.2px;
+  }
+  nav .container h2 span {
+    color: #43ffc2;
+  }
+  nav .container .menuWrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  nav .container .menuWrapper i {
+    color: #fff;
+  }
+  nav .container .menuWrapper p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 6px;
+  }
+  .shoppingCartContainer {
+    width: 400px;
+    position: fixed;
+    top: 10.5%;
+    margin: 10px;
+    right:  -700px;
+    min-height: 200vh;
+    justify-content: flex-start;
+    opacity: 0;
+    transition: all 700ms ease-in-out;
+  }
+
+  .shoppingCartContainer.hidden {
+    right: 0;
+    opacity: 1;
+  }
+  .shoppingCart {
+    height: 75vh;
+    width: 100%;
+    min-height: 70vh;
+    border-radius: 0;
+  }
+  .shoppingCart .cardRow {
+    width: calc(100% - 62px);
+  }
+  .shoppingCartPrice {
+    height: 12vh;
+    min-height: 12vh;
+    width: 100%;
+  }
+}
