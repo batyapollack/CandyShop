@@ -1,6 +1,6 @@
 # CandyShop
 
-<h2> Title: Shopping App. </h2>
+<h2> Shopping App. </h2>
 <h4> Developer: Batya Pollack </h4>
 
 Explanation: I have developed a website of a candy store where it is possible to add items to the shopping cart and pay.
@@ -9,7 +9,7 @@ Payment is made via a PayPal account or by credit card.
 - The shopping cart is saved in localStorage.
 - You can add to the shopping cart some sweets of the same type.
 - You can search for a particular candy from the candy list.
-- Sweets can be deleted from the shopping cart.
+- Sweets can be deleted from shopping cart.
 
 
 
