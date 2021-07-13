@@ -1,5 +1,5 @@
 # CandyShop
-
+Link to web: candyshopapp.herokuapp.com/
 <h2> Shopping App. </h2>
 <h4> Developer: Batya Pollack </h4>
 
