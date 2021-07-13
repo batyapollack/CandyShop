@@ -1,7 +1,7 @@
 # CandyShop
 
 <h2> Shopping App. </h2>
-<a href="candyshopapp.herokuapp.com/">link to shop</a> 
+<a href="https://candyshopapp.herokuapp.com/">link to shop</a> 
 <h4> Developer: Batya Pollack </h4>
 
 Explanation: I have developed a website of a candy store where it is possible to add items to the shopping cart and pay.
